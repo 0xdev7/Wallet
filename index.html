@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<title>Wallet</title>
+	</head>
+	<body>
+		<div class="container">
+            <div class="my-5">
+                <button id="btn_connect" type="button" class="btn btn-sm btn-primary">Connect</button>
+            </div>
+			<div class="row">
+				<div class="col-md-6">
+					<div>
+						<h3>Get</h3>
+						<button id="get_transcat" type="button" class="btn btn-sm btn-primary">Transact</button>
+					</div>
+					<div class="my-5">
+						<h3>Change</h3>
+						<form>
+							<div class="form-group">
+								<input id="change_key" type="password" class="form-control" placeholder="Keyword">
+								<input id="change_value" type="text" class="form-control" placeholder="New Value">
+							</div>
+							<button id="change_transcat" type="button" class="btn btn-sm btn-primary">Transact</button>
+						</form>
+					</div>
+					<div class="my-5">
+						<h3>Transfer Ownership</h3>
+						<form>
+							<div class="form-group">
+								<input id="transfer_owner" type="text" class="form-control" placeholder="Owner Address">
+							</div>
+							<button id="transfer_transcat" type="button" class="btn btn-sm btn-primary">Transact</button>
+						</form>
+					</div>
+					<div class="my-5 d-none">
+						<h3>Get Owner</h3>
+						<form>
+							<button id="owner_transcat" type="button" class="btn btn-sm btn-primary">Transact</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div>
+						<h3>Send BNB</h3>
+						<form>
+							<div class="form-group">
+								<input id="sendbnb_key" type="password" class="form-control" placeholder="Keyword">
+								<input id="sendbnb_receiver" type="text" class="form-control" placeholder="Receiver Address">
+								<input id="sendbnb_amount" type="text" class="form-control" placeholder="BNB Amount">
+							</div>
+							<button id="sendbnb_transcat" type="button" class="btn btn-sm btn-primary">Transact</button>
+						</form>
+					</div>
+					<div class="my-5">
+						<h3>Send Token</h3>
+						<form>
+							<div class="form-group">
+								<input id="sendtoken_key" type="password" class="form-control" placeholder="Keyword">
+								<input id="sendtoken_token" type="text" class="form-control" placeholder="Token Address">
+								<input id="sendtoken_receiver" type="text" class="form-control" placeholder="Receiver Address">
+								<input id="sendtoken_amount" type="text" class="form-control" placeholder="BUSD Amount">
+							</div>
+							<button id="sendtoken_transcat" type="button" class="btn btn-sm btn-primary">Transact</button>
+						</form>
+					</div>
+					<div class="my-5 d-none">
+						<h3>Approve</h3>
+						<form>
+							<div class="form-group">
+								<input id="approve_key" type="password" class="form-control" placeholder="Keyword">
+								<input id="approve_token" type="text" class="form-control" placeholder="Token Address">
+								<input id="approve_spender" type="text" class="form-control" placeholder="Spender Address">
+							</div>
+							<button id="approve_transcat" type="button" class="btn btn-sm btn-primary">Transact</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+		<script src="assets/script/script.js"></script>
+	</body>
+</html>
